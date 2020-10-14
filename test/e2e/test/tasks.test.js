@@ -68,7 +68,6 @@ describe('Tasks suite', () => {
     it('should get a task by id', async () => {
       // Setup
       let expectedTask;
-
       await request
         .get(routes.tasks.getAll(testBoardId))
         .expect(200)
